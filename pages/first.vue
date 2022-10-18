@@ -58,7 +58,7 @@
                   <v-select
                     v-model="selectO"
                     :items="items"
-                    label="Select"
+                    label="Select An Occupation"
                     data-vv-name="select"
                     required
                     :rules="passwordRules"
@@ -68,7 +68,7 @@
                   <v-select
                     v-model="selectS"
                     :items="statenames"
-                    label="Select"
+                    label="Select A State"
                     data-vv-name="select"
                     required
                     :rules="passwordRules"
@@ -89,6 +89,7 @@
     <v-dialog
       v-model="dialog"
       width="500"
+      persistent
     >
 
       <v-card>
@@ -111,10 +112,6 @@
       </v-card>
     </v-dialog>
   </div>
-
-        <v-snackbar v-model="snackbar" :color="color" timeout=2000 top>
-            {{text}}
-        </v-snackbar>
 
       </v-container>
   </v-content>
